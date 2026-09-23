@@ -1,62 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Home</title>
-    <style>
-        ul.breadcrumb {
-  padding: 10px 16px;
-  list-style: none;
-  background-color: #eee;
-}
-
-
-ul.breadcrumb li {
-  display: inline;
-  font-size: 18px;
-}
-
-
-ul.breadcrumb li+li:before {
-  padding: 8px;
-  color: black;
-  content: "/\00a0";
-}
-
-
-ul.breadcrumb li a {
-  color: #0275d8;
-  text-decoration: none;
-}
-
-
-ul.breadcrumb li a:hover {
-  color: #01447e;
-  text-decoration: underline;
-}
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Depstar</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
-    <ul class="breadcrumb">
-    <li><a href="home.html">home</a></li>
-  <li><a href="login.html">login</a></li>
-  <li>Dashboard</li>
-</ul>
-<h1>Dashboard</h1>
-<p>Welcome to dashboard</p>
+<div class="page">
+    <header class="site-header">
+        <div class="logo">DEPSTAR</div>
 
-<p> View your profile: </p>
-<a href="profile.html">Click here to view profile page</a>
-<br><br><br>
-<p> In our school we have events: </p>
-<a href="events.html">Click here to view our events page </a>
-<br><br><br>
-<p>Please give us feedback</p>
-<a href="feedback.html">Click here to give us feedback</a>
-<br><br><br>
-<p>Do you have questions? Check out our FAQ page:</p>
-<a href="FAQ.html">FAQ</a>
-<p>OR contact us: </p>
-<a href="contact.html">Contact</a>
-<br><br><br>
+        <nav class="nav">
+            <a href="index.html">Home</a>
+            <a href="dashboard.html" class="active">Dashboard</a>
+            <a href="profile.html">Profile</a>
+            <a href="about.html">About</a>
+            <a href="events.html">Events</a>
+            <a href="faq.html">FAQ</a>
+            <a href="feedback.html">Feedback</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+
+        <div class="header-actions">
+            <button class="theme-toggle" type="button" aria-label="Switch to dark theme">🌙</button>
+            <button class="hamburger" type="button" aria-label="Open navigation menu" aria-expanded="false">☰</button>
+        </div>
+    </header>
+
+    <div class="notification-banner">
+        <span>New campus events and student updates are now available.</span>
+        <button class="notification-close" type="button" aria-label="Close notification">×</button>
+    </div>
+
+    <header class="site-header dashboard-header">
+        <div>
+            <div class="logo">Welcome, Student</div>
+            <p>Student ID: DEP2026</p>
+        </div>
+        <a href="profile.html" class="profile-link" aria-label="Open profile">👤</a>
+    </header>
+
+    <main>
+        <section class="dashboard-grid">
+            <a href="#" class="card dashboard-card">
+                <h2>Check Your Attendance</h2>
+                <p>View your attendance details</p>
+            </a>
+
+            <a href="#" class="card dashboard-card">
+                <h2>Fees</h2>
+                <p>View your fee information</p>
+            </a>
+
+            <a href="feedback.html" class="card dashboard-card">
+                <h2>Feedback, FAQ, Contact</h2>
+                <p>Get assistance and provide feedback</p>
+            </a>
+
+            <a href="events.html" class="card dashboard-card">
+                <h2>Events</h2>
+                <p>View upcoming and past events</p>
+            </a>
+        </section>
+    </main>
+
+    <footer>
+        <p><a href="index.html">Logout</a></p>
+    </footer>
+</div>
 </body>
 </html>
