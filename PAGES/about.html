@@ -1,55 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Home</title>
-        <style>
-        ul.breadcrumb {
-  padding: 10px 16px;
-  list-style: none;
-  background-color: #eee;
-}
-
-
-ul.breadcrumb li {
-  display: inline;
-  font-size: 18px;
-}
-
-
-ul.breadcrumb li+li:before {
-  padding: 8px;
-  color: black;
-  content: "/\00a0";
-}
-
-
-ul.breadcrumb li a {
-  color: #0275d8;
-  text-decoration: none;
-}
-
-
-ul.breadcrumb li a:hover {
-  color: #01447e;
-  text-decoration: underline;
-}
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Depstar</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <ul class="breadcrumb">
-    <li><a href="home.html">home</a></li>
-  <li>About</li>
-</ul>
-<h1>ABOUT US</h1>
+<div class="page">
+    <header class="site-header">
+        <div class="logo">DEPSTAR</div>
 
-<p>We want to make a good student app</p>
+        <nav class="nav">
+            <a href="index.html">Home</a>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="profile.html">Profile</a>
+            <a href="about.html" class="active">About</a>
+            <a href="events.html">Events</a>
+            <a href="faq.html">FAQ</a>
+            <a href="feedback.html">Feedback</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+<!-- does writing anything here not matter as long as changes in js are made? -->
+        <div class="header-actions">
+            <button class="theme-toggle" type="button" aria-label="Switch to dark theme">moon</button>
+            <button class="hamburger" type="button" aria-label="Open navigation menu" aria-expanded="false">moon</button>
+        </div>
+    </header>
 
-<h3>Our Mission</h3>
+    <div class="notification-banner">
+        <span>New campus events and student updates are now available.</span>
+        <button class="notification-close" type="button" aria-label="Close notification">&times</button>
+    </div>
 
-<p>We are on a mission to make a good student app</p>
+    <main>
+        <section class="about-grid">
+            <div class="card">
+                <h1 class="section-title">About Us</h1>
 
-<h4>Our Vision</h4>
+                <div class="box auth-info">
+                    DEPSTAR is a student-focused platform designed to provide easy access to important academic and campus information.
+                </div>
 
-<p>It is our vision to make a good student app</p>
+                <h2 class="section-title">Our Mission</h2>
+
+                <div class="box auth-info">
+                    Our mission is to provide students with an organized, accessible and user-friendly digital platform.
+                </div>
+
+                <h2 class="section-title">Our Vision</h2>
+
+                <div class="box">
+                    Our vision is to create a connected student community where information, activities and opportunities are easy to discover.
+                </div>
+                <br>
+                <button class="btn dynamic-link modal-open"
+                        type="button"
+                        data-modal-title="About DEPSTAR"
+                        data-modal-content="DEPSTAR brings student information, activities, events and support services together in one simple portal.">
+                    
+                        Learn More
+                </button>
+            </div>
+
+            <div class="card about-image-card">
+                <div class="box about-image">
+                    <p>DEPSTAR Image</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy 2026 DEPSTAR Student Portal</p>
+    </footer>
+
+    <div class="modal" aria-hidden="true">
+        <div class="modal-box">
+            <button class="modal-close" type="button" aria-label="Close popup">&times</button>
+            <h2 class="modal-title">About DEPSTAR</h2>
+            <p class="modal-content"></p>
+        </div>
+    </div>
+</div>
+<script src="script.js" defer></script>
 </body>
 </html>
