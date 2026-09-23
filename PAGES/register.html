@@ -1,56 +1,328 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Home</title>
-        <style>
-        ul.breadcrumb {
-  padding: 10px 16px;
-  list-style: none;
-  background-color: #eee;
-}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration - DEPSTAR</title>
 
-
-ul.breadcrumb li {
-  display: inline;
-  font-size: 18px;
-}
-
-
-ul.breadcrumb li+li:before {
-  padding: 8px;
-  color: black;
-  content: "/\00a0";
-}
-
-
-ul.breadcrumb li a {
-  color: #0275d8;
-  text-decoration: none;
-}
-
-
-ul.breadcrumb li a:hover {
-  color: #01447e;
-  text-decoration: underline;
-}
-    </style>
+    <link rel="stylesheet" href="C:\ITUE203\STUDENT HUB\CSS\styles.css">
+    <script src="C:\ITUE203\STUDENT HUB\JAVASCRIPT\script.js" defer></script>
 </head>
+
 <body>
-    <ul class="breadcrumb">
-    <li><a href="home.html">home</a></li>
-  <li>Register</li>
-</ul>
-<h1>REGISTRATION PAGE</h1>
 
-<p>Welcome to student hub portal</p>
+<div class="page">
 
-<form>
-    <label for="name">First name:</label>
-    <input type="text" id="name" name="name"><br><br>
-    <label for="email">Email:</label>
-    <input type="text" id="email" name="email"><br><br>
-    <label for="password">Password:</label>
-    <input type="password" id="password" name="password"><br><br>
-</form>
+    <header class="site-header">
+
+        <div class="logo">
+            DEPSTAR
+        </div>
+
+        <nav class="nav">
+            <a href="index.html">Home</a>
+            <a href="login.html">Login</a>
+            <a href="register.html">Register</a>
+            <a href="about.html">About</a>
+            <a href="events.html">Events</a>
+            <a href="faq.html">FAQ</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+
+        <div class="header-actions">
+            <button class="theme-toggle" type="button">🌙</button>
+            <button class="hamburger" type="button">☰</button>
+        </div>
+
+    </header>
+
+
+    <main>
+
+        <section class="card registration-container">
+
+            <h1 class="section-title registration-title">
+                Student Registration Form
+            </h1>
+
+            <p class="registration-subtitle">
+                Please enter your details below.
+            </p>
+
+
+            <form id="registrationForm">
+
+                <div class="registration-grid">
+
+                    <div class="box registration-field">
+
+                        <label for="name">
+                            Full Name
+                        </label>
+
+                        <input
+                            type="text"
+                            id="name"
+                            name="name"
+                            placeholder="Enter your full name"
+                            required
+                        >
+
+                        <span id="nameError" class="field-error"></span>
+
+                    </div>
+
+
+                    <div class="box registration-field">
+
+                        <label for="email">
+                            Email
+                        </label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="Enter your email"
+                            required
+                        >
+
+                        <span id="emailError" class="field-error"></span>
+
+                    </div>
+
+
+                    <div class="box registration-field">
+
+                        <label for="mobile">
+                            Mobile Number
+                        </label>
+
+                        <input
+                            type="tel"
+                            id="mobile"
+                            name="mobile"
+                            placeholder="Enter 10-digit mobile number"
+                            maxlength="10"
+                            required
+                        >
+
+                        <span id="mobileError" class="field-error"></span>
+
+                    </div>
+
+
+                    <div class="box registration-field">
+
+                        <label for="course">
+                            Course
+                        </label>
+
+                        <select id="course" name="course" required>
+
+                            <option value="">
+                                Select Course
+                            </option>
+
+                            <option value="B.Tech CSE">
+                                B.Tech CSE
+                            </option>
+
+                            <option value="B.Tech IT">
+                                B.Tech IT
+                            </option>
+
+                            <option value="B.Tech ECE">
+                                B.Tech ECE
+                            </option>
+
+                            <option value="B.Tech Mechanical">
+                                B.Tech Mechanical
+                            </option>
+
+                        </select>
+
+                        <span id="courseError" class="field-error"></span>
+
+                    </div>
+
+
+                    <div class="box registration-field">
+
+                        <label for="year">
+                            Year
+                        </label>
+
+                        <select id="year" name="year" required>
+
+                            <option value="">
+                                Select Year
+                            </option>
+
+                            <option value="1">
+                                First Year
+                            </option>
+
+                            <option value="2">
+                                Second Year
+                            </option>
+
+                            <option value="3">
+                                Third Year
+                            </option>
+
+                            <option value="4">
+                                Fourth Year
+                            </option>
+
+                        </select>
+
+                        <span id="yearError" class="field-error"></span>
+
+                    </div>
+
+
+                    <div class="box registration-field">
+
+                        <label>
+                            Gender
+                        </label>
+
+                        <div class="radio-group">
+
+                            <label class="radio-option">
+                                <input
+                                    type="radio"
+                                    name="gender"
+                                    value="Male"
+                                >
+                                Male
+                            </label>
+
+                            <label class="radio-option">
+                                <input
+                                    type="radio"
+                                    name="gender"
+                                    value="Female"
+                                >
+                                Female
+                            </label>
+
+                            <label class="radio-option">
+                                <input
+                                    type="radio"
+                                    name="gender"
+                                    value="Other"
+                                >
+                                Other
+                            </label>
+
+                        </div>
+
+                        <span id="genderError" class="field-error"></span>
+
+                    </div>
+
+
+                    <div class="box registration-field">
+
+                        <label for="password">
+                            Password
+                        </label>
+
+                        <input
+                            type="password"
+                            id="password"
+                            name="password"
+                            placeholder="Enter password"
+                            required
+                        >
+
+                        <span id="passwordError" class="field-error"></span>
+
+                    </div>
+
+
+                    <div class="box registration-field">
+
+                        <label for="confirmPassword">
+                            Confirm Password
+                        </label>
+
+                        <input
+                            type="password"
+                            id="confirmPassword"
+                            name="confirmPassword"
+                            placeholder="Re-enter password"
+                            required
+                        >
+
+                        <span id="confirmPasswordError" class="field-error"></span>
+
+                    </div>
+
+
+                    <div class="box registration-field full-width">
+
+                        <label class="checkbox-option">
+
+                            <input
+                                type="checkbox"
+                                id="terms"
+                                name="terms"
+                            >
+
+                            I accept the Terms and Conditions.
+
+                        </label>
+
+                        <span id="termsError" class="field-error"></span>
+
+                    </div>
+
+                </div>
+
+
+                <div class="submit-center">
+
+                    <button
+                        type="submit"
+                        class="btn"
+                    >
+                        Register
+                    </button>
+
+                    <button
+                        type="reset"
+                        class="btn"
+                    >
+                        Clear
+                    </button>
+
+                </div>
+
+
+                <div
+                    id="successMessage"
+                    class="registration-message"
+                ></div>
+
+            </form>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <p>
+            © 2026 DEPSTAR Student Portal
+        </p>
+
+    </footer>
+
+</div>
+
 </body>
 </html>
