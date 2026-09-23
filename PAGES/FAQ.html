@@ -1,57 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
-    <title>FAQ page</title>
-        <style>
-        ul.breadcrumb {
-  padding: 10px 16px;
-  list-style: none;
-  background-color: #eee;
-}
-
-
-ul.breadcrumb li {
-  display: inline;
-  font-size: 18px;
-}
-
-
-ul.breadcrumb li+li:before {
-  padding: 8px;
-  color: black;
-  content: "/\00a0";
-}
-
-
-ul.breadcrumb li a {
-  color: #0275d8;
-  text-decoration: none;
-}
-
-
-ul.breadcrumb li a:hover {
-  color: #01447e;
-  text-decoration: underline;
-}
-    </style>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - Depstar</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
-        <ul class="breadcrumb">
-          <li><a href="home.html">home</a></li>
-  <li><a href="login.html">login</a></li>
-  <li><a href="dashboard.html">dashboard</a></li>
-  <li>FAQ</li>
-</ul>
-<h2>Our most asked questions</h2>
-<details>
-        <summary>What does a dog say?</summary>
-        <p>bow wow</p>
-</details>
-<details>
-        <summary>What does a cat say?</summary>
-        <p>meow</p>
-</details>
+<div class="page">
+    <header class="site-header">
+        <div class="logo">DEPSTAR</div>
+
+        <nav class="nav">
+            <a href="index.html">Home</a>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="profile.html">Profile</a>
+            <a href="about.html">About</a>
+            <a href="events.html">Events</a>
+            <a href="faq.html" class="active">FAQ</a>
+            <a href="feedback.html">Feedback</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+
+        <div class="header-actions">
+            <button class="theme-toggle" type="button" aria-label="Switch to dark theme">🌙</button>
+            <button class="hamburger" type="button" aria-label="Open navigation menu" aria-expanded="false">☰</button>
+        </div>
+    </header>
+
+    <div class="notification-banner">
+        <span>New campus events and student updates are now available.</span>
+        <button class="notification-close" type="button" aria-label="Close notification">×</button>
+    </div>
+
+    <main>
+        <section class="card faq-container">
+            <h1 class="faq-title"><strong>FAQ</strong><br>Page</h1>
+
+            <div class="box faq-item">
+                <button class="faq-question" type="button" aria-expanded="false">
+                    How do I check my attendance?
+                </button>
+                <div class="faq-answer">
+                    <p>Log in to your dashboard and select the Attendance option.</p>
+                </div>
+            </div>
+
+            <div class="box faq-item">
+                <button class="faq-question" type="button" aria-expanded="false">
+                    How can I view upcoming events?
+                </button>
+                <div class="faq-answer">
+                    <p>Open the Events page from the navigation menu or dashboard.</p>
+                </div>
+            </div>
+
+            <div class="box faq-item">
+                <button class="faq-question" type="button" aria-expanded="false">
+                    How do I submit feedback?
+                </button>
+                <div class="faq-answer">
+                    <p>Visit the Feedback page and submit your message through the feedback form.</p>
+                </div>
+            </div>
+
+            <div class="box faq-item">
+                <button class="faq-question" type="button" aria-expanded="false">
+                    How do I update my profile?
+                </button>
+                <div class="faq-answer">
+                    <p>Open the Profile page from the dashboard to view your student information.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 DEPSTAR Student Portal</p>
+    </footer>
+</div>
 </body>
 </html>
