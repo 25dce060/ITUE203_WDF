@@ -1,56 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Home</title>
-        <style>
-        ul.breadcrumb {
-  padding: 10px 16px;
-  list-style: none;
-  background-color: #eee;
-}
-
-
-ul.breadcrumb li {
-  display: inline;
-  font-size: 18px;
-}
-
-
-ul.breadcrumb li+li:before {
-  padding: 8px;
-  color: black;
-  content: "/\00a0";
-}
-
-
-ul.breadcrumb li a {
-  color: #0275d8;
-  text-decoration: none;
-}
-
-
-ul.breadcrumb li a:hover {
-  color: #01447e;
-  text-decoration: underline;
-}
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Depstar</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
-    <ul class="breadcrumb">
-    <li><a href="home.html">home</a></li>
-  <li>Login</li>
-</ul>
-<h1>LOGIN PAGE</h1>
+<div class="page">
+    <header class="site-header">
+        <div class="logo">DEPSTAR</div>
 
-<p>Welcome to student hub portal</p>
+        <nav class="nav">
+            <a href="index.html">Home</a>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="profile.html">Profile</a>
+            <a href="about.html">About</a>
+            <a href="events.html">Events</a>
+            <a href="faq.html">FAQ</a>
+            <a href="feedback.html">Feedback</a>
+            <a href="contact.html">Contact</a>
+        </nav>
 
-<form>
-    <label for="name">Username:</label>
-    <input type="text" id="name" name="name"><br><br>
-    <label for="password">Password:</label>
-    <input type="password" id="password" name="password"><br><br>
-</form>
-<p style="color: ghostwhite;"><a href="admin.html" style="color: white;">admin</a></p>
-<p style="color: ghostwhite;"><a href="dashboard.html" style="color: white;">dashboard</a></p>
+        <div class="header-actions">
+            <button class="theme-toggle" type="button" aria-label="Switch to dark theme">🌙</button>
+            <button class="hamburger" type="button" aria-label="Open navigation menu" aria-expanded="false">☰</button>
+        </div>
+    </header>
+
+    <div class="notification-banner">
+        <span>New campus events and student updates are now available.</span>
+        <button class="notification-close" type="button" aria-label="Close notification">×</button>
+    </div>
+
+    <main>
+        <section class="auth-section">
+            <div class="card">
+                <h1 class="section-title">Welcome Back!</h1>
+                <p class="auth-info">Login to access your DEPSTAR student portal and manage your academic information.</p>
+
+                <div class="box">
+                    <h3>Student Portal</h3>
+                    <p>Check your attendance, fees, events, profile and other student information from your dashboard.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <h1 class="section-title">Login</h1>
+
+                <form action="dashboard.html" method="get">
+                    <label for="login-id">Student ID</label>
+                    <input type="text" id="login-id" name="student-id" placeholder="Enter your student ID" required>
+
+                    <label for="login-password">Password</label>
+                    <input type="password" id="login-password" name="password" placeholder="Enter your password" required>
+
+                    <label class="terms-label">
+                        <input type="checkbox" name="remember">
+                        <span>Remember me</span>
+                    </label>
+                    <br>
+                    <p><a href="#">Forgot Password?</a></p>
+
+                    <button type="submit" class="btn">Login</button>
+                </form>
+
+                <div class="auth-form-divider">
+                    <p>Don't have an account?</p>
+                    <a href="register.html" class="btn">Create Account</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 DEPSTAR Student Portal</p>
+    </footer>
+</div>
 </body>
 </html>
