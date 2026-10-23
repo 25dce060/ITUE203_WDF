@@ -1,0 +1,45 @@
+Project name: A StudentHub portal 
+
+Objective: Creat a user-friendly StudentHub portal that will allow students to do multiple tasks
+
+Stakeholders: 
+
+1) Students
+2) Teachers
+3) Website administrators
+4) Payment gateway providers
+5) Admin team
+
+Functional Requirements:
+
+1) Login page:
+
+> Students/Teachers/Admin staff can access their accounts using their respective Ids
+> User Authentication should be secured
+> Provide links to the institute's social media(Instagram,Linkedin etc.)
+
+2) Dashboard:
+
+> Can show 4 main functions and provide links to modules
+> Should also provide link to profile and logout
+> Should be slightly different depending on whether the student/teacher/admin has logged in
+
+3) Attendance (the first of four main functions)
+
+> Teachers can view their own attendance and also input attendance for all the students in their class/es
+> Students can view their attendance for all the subjects of the day
+> Admin can only view their own attendance
+
+4) Fee payment
+
+5) Time table
+
+6) Menu
+
+7) Profile
+
+8) Module
+
+9) Event participation
+
+10)Leave 
