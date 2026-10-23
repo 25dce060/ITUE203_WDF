@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration - StudentHub</title>
+
+    <link rel="stylesheet" href="../CSS/styles.css">
+    <script src="../JAVASCRIPT/script.js" defer></script>
+<script src="../JAVASCRIPT/registration-validation.js" defer></script>
+</head>
+
+<body>
+<div class="page">
+
+    <header class="site-header">
+        <a href="index.html" class="logo">StudentHub</a>
+
+        <nav class="nav">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="events.html">Events</a>
+            <a href="faq.html">FAQ</a>
+            <a href="contact.html">Contact</a>
+            <a href="login.html">Login</a>
+            <a href="register.html">Register</a>
+            <a href="admin.html">Admin</a>
+        </nav>
+
+        <div class="header-actions">
+            <button class="theme-toggle" type="button"
+                    aria-label="Switch to dark theme">🌙</button>
+            <button class="hamburger" type="button"
+                    aria-label="Open navigation menu"
+                    aria-expanded="false">☰</button>
+        </div>
+    </header>
+
+    <div class="notification-banner" role="status">
+        <span>Complete the form to register as a student.</span>
+        <button class="notification-close" type="button"
+                aria-label="Dismiss notification">×</button>
+    </div>
+
+    <main>
+        <section class="card registration-container">
+
+            <h1 class="section-title registration-title">
+                Student Registration
+            </h1>
+
+            <p class="registration-subtitle">
+                Enter your details below.
+            </p>
+
+           <form  id="registrationForm" action="/practical/register.php" method="POST" novalidate>
+
+                <div class="registration-grid">
+
+                    <div class="box registration-field">
+                        <label for="studentName">Full Name</label>
+                        <input type="text" id="studentName" name="name"
+                               minlength="2" maxlength="100"
+                               autocomplete="name" required>
+                        <span id="studentNameError" class="field-error"
+                              aria-live="polite"></span>
+                    </div>
+
+                    <div class="box registration-field">
+                        <label for="studentEmail">Email Address</label>
+                        <input type="email" id="studentEmail" name="email"
+                               maxlength="254" autocomplete="email" required>
+                        <span id="studentEmailError" class="field-error"
+                              aria-live="polite"></span>
+                    </div>
+
+                    <div class="box registration-field">
+                        <label for="mobile">Mobile Number</label>
+                        <input type="tel" id="mobile" name="mobile"
+                               maxlength="10" inputmode="numeric"
+                               autocomplete="tel" required>
+                        <span id="mobileError" class="field-error"
+                              aria-live="polite"></span>
+                    </div>
+
+                    <div class="box registration-field">
+                        <label for="course">Course</label>
+                        <select id="course" name="course" required>
+                            <option value="">Select Course</option>
+                            <option value="B.Tech CSE">B.Tech CSE</option>
+                            <option value="B.Tech IT">B.Tech IT</option>
+                            <option value="B.Tech ECE">B.Tech ECE</option>
+                            <option value="B.Tech Mechanical">B.Tech Mechanical</option>
+                        </select>
+                        <span id="courseError" class="field-error"
+                              aria-live="polite"></span>
+                    </div>
+
+                    <div class="box registration-field">
+                        <label for="year">Year of Study</label>
+                        <select id="year" name="year" required>
+                            <option value="">Select Year</option>
+                            <option value="1">First Year</option>
+                            <option value="2">Second Year</option>
+                            <option value="3">Third Year</option>
+                            <option value="4">Fourth Year</option>
+                        </select>
+                        <span id="yearError" class="field-error"
+                              aria-live="polite"></span>
+                    </div>
+
+                    <fieldset class="box registration-field gender-field">
+                        <legend>Gender</legend>
+
+                        <div class="radio-group">
+                            <label class="radio-option">
+                                <input type="radio" name="gender"
+                                       value="Male" required>
+                                Male
+                            </label>
+
+                            <label class="radio-option">
+                                <input type="radio" name="gender"
+                                       value="Female">
+                                Female
+                            </label>
+
+                            <label class="radio-option">
+                                <input type="radio" name="gender"
+                                       value="Other">
+                                Other
+                            </label>
+                        </div>
+
+                        <span id="genderError" class="field-error"
+                              aria-live="polite"></span>
+                    </fieldset>
+
+                    <div class="box registration-field">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password"
+                               autocomplete="new-password" required>
+                        <small>
+                            Use 8–20 characters with uppercase, lowercase,
+                            a number and a special character.
+                        </small>
+                        <span id="passwordError" class="field-error"
+                              aria-live="polite"></span>
+                    </div>
+
+                    <div class="box registration-field">
+                        <label for="confirmPassword">Confirm Password</label>
+                        <input type="password" id="confirmPassword"
+                               name="confirmPassword"
+                               autocomplete="new-password" required>
+                        <span id="confirmPasswordError" class="field-error"
+                              aria-live="polite"></span>
+                    </div>
+
+                    <fieldset class="box registration-field full-width terms-field">
+                        <legend>Terms and Conditions</legend>
+
+                        <label class="checkbox-option">
+                            <input type="checkbox" id="terms" name="terms"
+                                   value="accepted" required>
+                            <span>I accept the Terms and Conditions.</span>
+                        </label>
+
+                        <span id="termsError" class="field-error"
+                              aria-live="polite"></span>
+                    </fieldset>
+
+                </div>
+
+                <div class="registration-actions">
+                    <button type="submit" class="btn">Register</button>
+                    <button type="reset" class="btn">Clear Form</button>
+                </div>
+
+                <div id="registrationMessage"
+                     class="registration-message"
+                     role="status" aria-live="polite"></div>
+
+                <div class="box registration-field">
+    <label for="username">Username</label>
+
+    <input
+        type="text"
+        id="username"
+        name="username"
+        minlength="4"
+        maxlength="30"
+        pattern="[A-Za-z0-9_]{4,30}"
+        placeholder="4–30 letters, numbers or underscores"
+        autocomplete="username"
+        aria-describedby="usernameError"
+        required
+    >
+
+    <span
+        id="usernameError"
+        class="field-error"
+        aria-live="polite"></span>
+</div>
+
+            </form>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 StudentHub</p>
+    </footer>
+
+</div>
+</body>
+</html>

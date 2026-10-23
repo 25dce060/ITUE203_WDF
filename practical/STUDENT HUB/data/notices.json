@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "title": "Semester Registration Open",
+        "type": "Academic",
+        "date": "2026-10-25",
+        "description": "Semester registration is open for eligible students."
+    },
+    {
+        "id": 2,
+        "title": "Library Timing Update",
+        "type": "General",
+        "date": "2026-10-28",
+        "description": "The central library will remain open until 9 PM."
+    },
+    {
+        "id": 3,
+        "title": "Sports Day Registration",
+        "type": "Event",
+        "date": "2026-11-01",
+        "description": "Students can register for Sports Day activities."
+    },
+    {
+        "id": 4,
+        "title": "Fee Payment Reminder",
+        "type": "Fees",
+        "date": "2026-11-05",
+        "description": "Please check and complete pending fee payments."
+    },
+    {
+        "id": 5,
+        "title": "Technical Fest Volunteers",
+        "type": "Event",
+        "date": "2026-11-10",
+        "description": "Volunteer registrations are open for the Technical Fest."
+    },
+    {
+        "id": 6,
+        "title": "Holiday Notice",
+        "type": "General",
+        "date": "2026-11-20",
+        "description": "Refer to the institute calendar for holiday information."
+    }
+]

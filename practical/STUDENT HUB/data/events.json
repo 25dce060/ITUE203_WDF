@@ -1,0 +1,50 @@
+[
+    {
+        "id": 1,
+        "title": "Annual Sports Day",
+        "category": "Sports",
+        "date": "2026-11-05",
+        "venue": "Main Ground",
+        "description": "Inter-department sports and athletics competitions."
+    },
+    {
+        "id": 2,
+        "title": "Technical Fest",
+        "category": "Technical",
+        "date": "2026-11-15",
+        "venue": "Innovation Hall",
+        "description": "Coding contests, workshops and project exhibitions."
+    },
+    {
+        "id": 3,
+        "title": "Cultural Festival",
+        "category": "Cultural",
+        "date": "2026-12-02",
+        "venue": "Auditorium",
+        "description": "Music, dance, drama and cultural performances."
+    },
+    {
+        "id": 4,
+        "title": "Coding Competition",
+        "category": "Technical",
+        "date": "2026-12-10",
+        "venue": "Computer Lab",
+        "description": "A programming competition for students."
+    },
+    {
+        "id": 5,
+        "title": "Career Guidance Session",
+        "category": "Career",
+        "date": "2027-01-12",
+        "venue": "Seminar Hall",
+        "description": "Career planning and placement guidance."
+    },
+    {
+        "id": 6,
+        "title": "Project Exhibition",
+        "category": "Technical",
+        "date": "2027-01-20",
+        "venue": "Exhibition Area",
+        "description": "Students showcase their academic projects."
+    }
+]

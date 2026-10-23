@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile - StudentHub</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+<div class="page">
+
+    <header class="site-header">
+        <a href="index.html" class="logo">StudentHub</a>
+
+        <nav class="nav">
+            <a href="index.html">Home</a>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="dynamic.html">Dynamic Data</a>
+            <a href="profile.html">Profile</a>
+            <a href="events.html">Events</a>
+            <a href="faq.html">FAQ</a>
+            <a href="contact.html">Contact</a>
+            <a href="admin.html">Admin</a>
+        </nav>
+
+        <div class="header-actions">
+            <button class="theme-toggle" type="button" aria-label="Switch to dark theme">🌙</button>
+            <button class="hamburger" type="button" aria-label="Open navigation menu" aria-expanded="false">☰</button>
+        </div>
+    </header>
+
+    <div class="notification-banner" role="status">
+        <span>Review your student profile information.</span>
+        <button class="notification-close" type="button" aria-label="Dismiss notification">×</button>
+    </div>
+
+    <main>
+
+        <section class="card">
+
+            <h1 class="section-title">My Profile</h1>
+
+            <div class="profile-layout">
+
+                <div class="card profile-card">
+                    <div class="profile-image">👤</div>
+                    <h2>Student Name</h2>
+                    <p>Student ID: DEP2026</p>
+                    <p>Computer Science</p>
+                </div>
+
+                <div>
+                    <h2 class="section-title">Personal Information</h2>
+
+                    <div class="box">
+                        <p><strong>Full Name:</strong> Student Name</p>
+                        <p><strong>Student ID:</strong> DEP2026</p>
+                        <p><strong>Email:</strong> student@example.com</p>
+                        <p><strong>Phone:</strong> +91 98765 43210</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="card">
+            <h2 class="section-title">Academic Information</h2>
+
+            <div class="info-grid">
+                <div class="box"><h3>Course</h3><p>B.Tech CSE</p></div>
+                <div class="box"><h3>Year</h3><p>Second Year</p></div>
+                <div class="box"><h3>Division</h3><p>A</p></div>
+            </div>
+        </section>
+
+        <div class="button-row">
+            <a href="dashboard.html" class="btn">Back to Dashboard</a>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>© 2026 StudentHub</p>
+    </footer>
+
+</div>
+
+</body>
+</html>

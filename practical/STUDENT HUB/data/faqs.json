@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "question": "How do I check my attendance?",
+        "category": "Attendance",
+        "answer": "Open your dashboard and select the Attendance section."
+    },
+    {
+        "id": 2,
+        "question": "How can I view upcoming events?",
+        "category": "Events",
+        "answer": "Visit the Events page to view upcoming campus activities."
+    },
+    {
+        "id": 3,
+        "question": "How do I submit feedback?",
+        "category": "Feedback",
+        "answer": "Open the Feedback page and complete the feedback form."
+    },
+    {
+        "id": 4,
+        "question": "How can I view student information?",
+        "category": "Students",
+        "answer": "The student profile section displays sample student information."
+    },
+    {
+        "id": 5,
+        "question": "Where can I find fee information?",
+        "category": "Fees",
+        "answer": "Open the Dashboard and select the Fees section."
+    },
+    {
+        "id": 6,
+        "question": "How can I contact support?",
+        "category": "Support",
+        "answer": "Visit the Contact page to find the support details."
+    }
+]

@@ -1,0 +1,184 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background: #f4f6f9;
+    color: #222;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 24px;
+    border-radius: 8px;
+}
+
+header,
+footer {
+    padding: 12px 0;
+}
+
+header {
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    margin-top: 0;
+}
+
+nav,
+.toolbar,
+.actions,
+.pagination {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+}
+
+a {
+    color: #0759a5;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.button,
+button {
+    display: inline-block;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 14px;
+    background: #0759a5;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.button:hover,
+button:hover {
+    background: #06447d;
+    text-decoration: none;
+}
+
+form {
+    margin: 20px 0;
+}
+
+form label {
+    display: block;
+    margin: 12px 0 6px;
+    font-weight: bold;
+}
+
+input,
+select {
+    width: 100%;
+    max-width: 500px;
+    padding: 10px;
+    border: 1px solid #bbb;
+    border-radius: 4px;
+    font-size: 15px;
+}
+
+.filter-form {
+    padding: 16px;
+    background: #f4f6f9;
+    border-radius: 6px;
+}
+
+.filter-form input,
+.filter-form select {
+    margin-bottom: 8px;
+}
+
+.table-wrap {
+    width: 100%;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 18px 0;
+}
+
+th,
+td {
+    padding: 11px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+th {
+    background: #0759a5;
+    color: white;
+}
+
+tbody tr:nth-child(even) {
+    background: #f7f9fb;
+}
+
+.deleted-row {
+    background: #ffe3e8 !important;
+}
+
+.success {
+    padding: 12px;
+    margin: 12px 0;
+    border-radius: 4px;
+    background: #d8f3dc;
+    color: #155724;
+}
+
+.error {
+    padding: 12px;
+    margin: 12px 0;
+    border-radius: 4px;
+    background: #f8d7da;
+    color: #721c24;
+}
+
+.pagination {
+    margin: 20px 0;
+}
+
+.pagination a {
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.pagination .current-page {
+    background: #0759a5;
+    color: white;
+}
+
+footer {
+    margin-top: 25px;
+    border-top: 1px solid #ddd;
+    color: #666;
+}
+
+@media (max-width: 700px) {
+    body {
+        padding: 8px;
+    }
+
+    .container {
+        padding: 12px;
+    }
+
+    th,
+    td {
+        padding: 8px;
+    }
+}

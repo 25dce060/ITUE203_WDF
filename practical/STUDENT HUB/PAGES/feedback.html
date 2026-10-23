@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback - StudentHub</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+<div class="page">
+
+    <header class="site-header">
+        <a href="index.html" class="logo">StudentHub</a>
+
+        <nav class="nav">
+            <a href="index.html">Home</a>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="dynamic.html">Dynamic Data</a>
+            <a href="profile.html">Profile</a>
+            <a href="events.html">Events</a>
+            <a href="faq.html">FAQ</a>
+            <a href="contact.html">Contact</a>
+            <a href="admin.html">Admin</a>
+        </nav>
+
+        <div class="header-actions">
+            <button class="theme-toggle" type="button" aria-label="Switch to dark theme">🌙</button>
+            <button class="hamburger" type="button" aria-label="Open navigation menu" aria-expanded="false">☰</button>
+        </div>
+    </header>
+
+    <div class="notification-banner" role="status">
+        <span>Your feedback helps improve the student experience.</span>
+        <button class="notification-close" type="button" aria-label="Dismiss notification">×</button>
+    </div>
+
+    <main>
+
+        <section class="card">
+
+            <p><a href="faq.html">Jump to FAQ</a></p>
+
+            <h1 class="section-title">Feedback Form</h1>
+
+            <form action="#" method="post">
+
+                <label for="feedbackName">Name</label>
+                <input type="text" id="feedbackName" name="name" required>
+
+                <label for="feedbackEmail">Email</label>
+                <input type="email" id="feedbackEmail" name="email" required>
+
+                <label for="feedbackMessage">Your Feedback</label>
+                <textarea id="feedbackMessage" name="feedback" required></textarea>
+
+                <button type="submit" class="btn">Submit Feedback</button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 StudentHub</p>
+    </footer>
+
+</div>
+
+</body>
+</html>

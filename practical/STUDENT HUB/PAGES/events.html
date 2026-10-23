@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events - StudentHub</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+<div class="page">
+
+    <header class="site-header">
+
+        <a href="index.html" class="logo">StudentHub</a>
+
+        <nav class="nav">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="dynamic.html">Dynamic Data</a>
+            <a href="profile.html">Profile</a>
+            <a href="events.html">Events</a>
+            <a href="faq.html">FAQ</a>
+            <a href="feedback.html">Feedback</a>
+            <a href="contact.html">Contact</a>
+            <a href="admin.html">Admin</a>
+        </nav>
+
+        <div class="header-actions">
+            <button class="theme-toggle" type="button" aria-label="Switch to dark theme">🌙</button>
+            <button class="hamburger" type="button" aria-label="Open navigation menu" aria-expanded="false">☰</button>
+        </div>
+
+    </header>
+
+    <div class="notification-banner" role="status">
+        <span>Check out campus events and upcoming activities.</span>
+        <button class="notification-close" type="button" aria-label="Dismiss notification">×</button>
+    </div>
+
+    <main>
+
+        <h1 class="section-title">Featured Events</h1>
+
+        <section class="event-slider" aria-label="Featured campus events">
+
+            <div class="slider-track">
+
+                <article class="slider-slide is-active" aria-hidden="false">
+                    <h3>Annual Sports Day</h3>
+                    <p>Join fellow students for sports and athletics.</p>
+                </article>
+
+                <article class="slider-slide" aria-hidden="true">
+                    <h3>Technical Fest</h3>
+                    <p>Explore coding competitions, technical talks, and projects.</p>
+                </article>
+
+                <article class="slider-slide" aria-hidden="true">
+                    <h3>Cultural Festival</h3>
+                    <p>Celebrate student talent through music, dance, and art.</p>
+                </article>
+
+            </div>
+
+            <div class="slider-controls">
+
+                <button class="slider-prev" type="button" aria-label="Previous slide">
+                    Previous
+                </button>
+
+                <div class="slider-dots" aria-label="Choose a slide">
+
+                    <button class="slider-dot is-active" type="button" aria-label="Show slide 1"></button>
+                    <button class="slider-dot" type="button" aria-label="Show slide 2"></button>
+                    <button class="slider-dot" type="button" aria-label="Show slide 3"></button>
+
+                </div>
+
+                <button class="slider-next" type="button" aria-label="Next slide">
+                    Next
+                </button>
+
+            </div>
+
+        </section>
+
+        <section class="card">
+
+            <div class="event-heading">
+                <h2 class="section-title">Past Events</h2>
+                <span>April 2026</span>
+            </div>
+
+            <h3>Name of Competition: Campus Competition</h3>
+
+            <div class="event-gallery">
+                <div class="image-placeholder">Image 1</div>
+                <div class="image-placeholder">Image 2</div>
+                <div class="video-placeholder">Video Placeholder</div>
+                <div class="image-placeholder">Image 3</div>
+                <div class="image-placeholder">Image 4</div>
+            </div>
+
+        </section>
+
+        <section class="card">
+
+            <h2 class="section-title">Upcoming Events</h2>
+
+            <div class="event-upcoming">
+
+                <article class="box">
+                    <h3>Annual Sports Day</h3>
+                    <p>Date: May 2026</p>
+                    <p>Location: Main Ground</p>
+                </article>
+
+                <article class="box">
+                    <h3>Technical Fest</h3>
+                    <p>Date: June 2026</p>
+                    <p>Location: Innovation Hall</p>
+                </article>
+
+                <article class="box">
+                    <h3>Cultural Festival</h3>
+                    <p>Date: July 2026</p>
+                    <p>Location: Auditorium</p>
+                </article>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 StudentHub</p>
+    </footer>
+
+</div>
+
+</body>
+</html>

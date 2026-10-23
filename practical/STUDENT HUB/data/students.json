@@ -1,0 +1,44 @@
+[
+    {
+        "id": "STU101",
+        "name": "Aarav Patel",
+        "course": "B.Tech CSE",
+        "year": 1,
+        "email": "aarav@example.com"
+    },
+    {
+        "id": "STU102",
+        "name": "Diya Shah",
+        "course": "B.Tech IT",
+        "year": 2,
+        "email": "diya@example.com"
+    },
+    {
+        "id": "STU103",
+        "name": "Kabir Mehta",
+        "course": "B.Tech CSE",
+        "year": 3,
+        "email": "kabir@example.com"
+    },
+    {
+        "id": "STU104",
+        "name": "Mira Desai",
+        "course": "B.Tech ECE",
+        "year": 2,
+        "email": "mira@example.com"
+    },
+    {
+        "id": "STU105",
+        "name": "Riya Joshi",
+        "course": "B.Tech IT",
+        "year": 4,
+        "email": "riya@example.com"
+    },
+    {
+        "id": "STU106",
+        "name": "Yash Shah",
+        "course": "B.Tech CSE",
+        "year": 1,
+        "email": "yash@example.com"
+    }
+]
